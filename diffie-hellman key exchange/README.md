@@ -1,6 +1,6 @@
 <!-- OVERVIEW -->
 ## Overview
-In a Diffoe-Hellman scheme with a common e with a common prime q = 11 and a primitive root α = 2
+In a Diffie-Hellman scheme with a common e with a common prime q = 11 and a primitive root α = 2
 
 The program finds:
 - A's private key if user A has a public key, Y(A) = 9

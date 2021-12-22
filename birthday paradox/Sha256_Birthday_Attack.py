@@ -1,11 +1,3 @@
-# -*- coding: utf-8 -*-
-"""
-Created on Tue Oct 26 19:26:42 2021
-
-@author: Temitayo Hayes
-Student number: 100794977
-"""
-
 import random
 from sympy import isprime
 from cryptography.hazmat.backends import default_backend

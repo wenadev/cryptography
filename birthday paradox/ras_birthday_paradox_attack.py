@@ -1,11 +1,3 @@
-# -*- coding: utf-8 -*-
-"""
-Created on Wed Oct 27 01:50:49 2021
-
-@author: Temitayo Hayes
-Student number: 100794977
-"""
-
 import random
 from sympy import isprime
 

@@ -1,27 +1,7 @@
-<!-- GETTING STARTED -->
-## Getting Started
+<!-- Overview -->
+## Overview
 
-To get a local copy up and running follow these simple steps.
+In a public-key system using RSA, the ciphertext is intercepted as '10' with a public key of       
+C = 10 sent to a user whose public key is {e = 5, n = 35}. 
 
-### Installation
- 
-```sh
-$ git clone https://github.com/2stobank/2sto-web
-$ yarn
-$ yarn start
-
-# Load the site at localhost:3000/
-```
-
-<!-- CONTRIBUTING -->
-## Contributing
-
-1. Create your Branch (`git checkout -b myCode`)
-2. Commit your Changes (`git commit -m 'Adding some Code'`)
-3. Push to the Branch (`git push origin myCOde`)
-4. Open a Pull Request to Main
-
-### Built With
-
-* [React](https://reactjs.org/)
-* [Create React App](https://github.com/facebook/create-react-app)
+The program finds the corresponding plaintext by bruteforcing the answer, the program also reveals the secret exponent in a private key {d = ?, n = 35}

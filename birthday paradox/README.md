@@ -1,27 +1,21 @@
 <!-- GETTING STARTED -->
-## Getting Started
-
-To get a local copy up and running follow these simple steps.
-
-### Installation
+## RSA Birthday Attack
  
-```sh
-$ git clone https://github.com/2stobank/2sto-web
-$ yarn
-$ yarn start
+The program:
+- Computes the hashes of 16 sets of 3 random prime numbers less than 28 by performing a bitwise XOR operation
+- Bruteforces its way with different sets of 3 fraudulent composite numbers less than 28 until it finds a set {c1, c2, c3} with a hash value that matches one of the hashes computed above- the matching set is referred to as {p1, p2, p3}. 
+- Demonstrates that in a real-world attack, the legitimate prime set {p1, p2, p3} is replaced with the fraudulent composite set {c1, c2, c3}. The bitwise XOR automatic signing process of the prime set {p1, p2, p3} can be appended to the composite set {c1,  c2,  c3} without  knowing the RSA's  private  key  and  by  
+computing just over 16 hashes
 
-# Load the site at localhost:3000/
-```
 
 <!-- CONTRIBUTING -->
-## Contributing
-
-1. Create your Branch (`git checkout -b myCode`)
-2. Commit your Changes (`git commit -m 'Adding some Code'`)
-3. Push to the Branch (`git push origin myCOde`)
-4. Open a Pull Request to Main
+## SHA 256 Birthday Attack
+The program: 
+- Computes the hashes of 16 sets of 3 random prime numbers less than 28 by performing a SHA-256 operation
+- Computes 1000 different sets of 3 fraudulent composite numbers less than 28 by performing a SHA-256 operation and checks all 16 sets to try and find a match until it finds a set {c1, c2, c3} with a hash value that matches one of the hashes computed above
+- It does not find a collision because with SHA-256, it is hard. 2128  hash  values would need to be generated to  find  a SHA256 collision which in a regular laptop would take approximately 58.88  septillion  years.
 
 ### Built With
 
-* [React](https://reactjs.org/)
-* [Create React App](https://github.com/facebook/create-react-app)
+* [Cryptography.io](https://cryptography.io/en/latest/hazmat/primitives/symmetric-encryption/)
+* [Sympy](https://www.sympy.org/en/index.html)

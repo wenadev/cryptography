@@ -1,9 +1,3 @@
-# -*- coding: utf-8 -*-
-"""
-Created on Mon Oct 25 20:21:44 2021
-
-@author: Temitayo
-"""
 import math
 
 #Question (1a)
@@ -26,7 +20,6 @@ for i in range(n):
         M = plaintext(i)
         break
 
-# Question (1b)
 
 #factors of n = 35
 factors = [[1, 35], [5, 7]]

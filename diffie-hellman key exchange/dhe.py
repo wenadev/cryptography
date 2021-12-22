@@ -2,7 +2,7 @@
 q = 11
 alpha = 2
 
-#Question (2a)- find A's private key while A's public key = 9
+#first task- find A's private key while A's public key = 9
 a_Y = 9
 
 def private_key(key, pub_key):
@@ -23,7 +23,7 @@ for exp in range(q):
         break
         
 
-#Question (2b)- find shared secret key while B's public key = 3
+#second task- find shared secret key while B's public key = 3
 b_Y = 3
 
 

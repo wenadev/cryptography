@@ -1,27 +1,14 @@
 <!-- GETTING STARTED -->
 ## Getting Started
 
-To get a local copy up and running follow these simple steps.
+Given:
+- A hidden 'message' has been signed with RSA-PSS
+- Signature = b'\x1e\xde\xabn\x95\xf0\xbbv\xc37\xac=\x9eeM\xf0)\xc7 P\xb2\x8b)X\xac\xe9\x9b&\x83p\x80\x89\xbd%,Q=\xdd\xfd7\xa8j\x90\xa1\xd6\xe7\x1ef\xee\x85CLA\xb2u\xfc3\x1b5c/k\xf3\xf4'
 
-### Installation
- 
-```sh
-$ git clone https://github.com/2stobank/2sto-web
-$ yarn
-$ yarn start
+The program:
+- Loads 10 pem keys from local directory and finds what private key matches the public key by verfiying the signature
 
-# Load the site at localhost:3000/
-```
-
-<!-- CONTRIBUTING -->
-## Contributing
-
-1. Create your Branch (`git checkout -b myCode`)
-2. Commit your Changes (`git commit -m 'Adding some Code'`)
-3. Push to the Branch (`git push origin myCOde`)
-4. Open a Pull Request to Main
 
 ### Built With
 
-* [React](https://reactjs.org/)
-* [Create React App](https://github.com/facebook/create-react-app)
+* [Cryptography.io](https://cryptography.io/en/latest/hazmat/primitives/symmetric-encryption/)

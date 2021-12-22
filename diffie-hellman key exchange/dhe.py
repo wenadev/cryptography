@@ -1,9 +1,3 @@
-# -*- coding: utf-8 -*-
-"""
-Created on Mon Oct 25 21:48:32 2021
-
-@author: Temitayo
-"""
 #common prime (q) = 11 and primitive root (A) = 2
 q = 11
 alpha = 2

@@ -1,5 +1,5 @@
 <!-- GETTING STARTED -->
-## RSA Birthday Attack
+## XOR Birthday Attack
  
 The program:
 - Computes the hashes of 16 sets of 3 random prime numbers less than 28 by performing a bitwise XOR operation
